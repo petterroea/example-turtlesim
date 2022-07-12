@@ -1,0 +1,17 @@
+version: 0.1.0
+
+project: test-project
+jobs:
+  basic_tests: # Overall job name
+    type: test
+    runtime:
+      simulator: turtlesim
+      framework: ros2:0
+    timeout: 2 #minutes
+    scenarios:
+      defaults: # Global to all scenarios, and overriden in specific scenarios.
+        subscriptions:
+          pose: turtle1/pose
+      settings:
+        - name: turtle
+          ros2_testfile: launch_turtle.py
