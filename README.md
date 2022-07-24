@@ -48,6 +48,14 @@ warpcli run basic_tests
 
 ### Using Docker
 
+
+Tests on MacOS and Ubuntu 20 often require explictly authorizing access to X11:
+
+    [MacOS] xhost +127.0.0.1: This will start an X11 server if needed, and allow the container to connect.
+    [Ubuntu 20] xhost +local:docker
+
+Then build and run the docker container:
+
 ```
 git clone git@github.com:art-e-fact/warp-client.git
 docker build -t turtle2 .
