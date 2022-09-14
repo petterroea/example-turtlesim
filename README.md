@@ -16,7 +16,7 @@ You can run the tests with:
 launch_test launch_turtle.py
 ```
 
-As it is the test will fail.
+As it is, the test will fail.
 
 If you take a look at the code, you should be able to find what is wrong and make the test pass.
 
@@ -35,7 +35,7 @@ Additionally, you can use ArtefactsCI to keep track of your tests results.
 2. Install the warp client
 
 ```
-pip install git+ssh://git@github.com/art-e-fact/warp-client
+pip install artefacts-client --extra-index-url https://d5cw4z7oemmfd.cloudfront.net/pep503/ -U
 ```
 
 2. Edit the project name in warp.yaml
