@@ -1,7 +1,6 @@
 # Turtlesim Demo Project
 
 This project demonstrates how to run a basic ros2 end to end tests in simulation (here turtlesim).
-foo
 
 ## Prerequisite
 
